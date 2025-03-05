@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 30px;
+    gap: 1.5rem;
     overflow: visible;
 }
 .sectionMain{
@@ -13,7 +13,7 @@
     width: 100vw !important;
     height: 100vh !important;
     background-color: #33353F;
-    padding: 40px;
+    padding: 2rem;
     padding-right: 0;
     gap: 80px;
     overflow-x: hidden;
@@ -52,7 +52,7 @@
 
 .description{
     @extend .roboto-500;
-    font-size: 24px;
+    font-size: 1.2rem;
     color: white;
 }
 
@@ -62,14 +62,14 @@
 
 .tvImage {
     position: relative;
-    width: 840px;
-    height: 634px;
+    width: 36rem;
+    height: 28rem;
 
     &Img {
         position: relative;
         z-index: 2;
-        width: 919px;
-        height: 734px;
+        width: 43rem;
+        height: 33rem;
     }
 }
 
