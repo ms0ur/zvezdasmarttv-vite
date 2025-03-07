@@ -10,12 +10,12 @@
 .sectionMain{
     display: flex;
     flex-direction: column;
-    width: 100vw !important;
-    height: 100vh !important;
+    width: 100vw;
+    height: 100vh;
     background-color: #33353F;
     padding: 2rem;
     padding-right: 0;
-    gap: 80px;
+    gap: 4rem;
     overflow-x: hidden;
 }
 
@@ -23,6 +23,9 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    &Logo{
+        width: 6.2rem;
+    }
 }
 
 .header{
@@ -57,7 +60,7 @@
 }
 
 .buttonContainer{
-    width: 100%;
+    width: 20rem;
 }
 
 .tvImage {
@@ -82,27 +85,29 @@
 }
 
 .gradientTop {
-    top: -25%;
-    left: 25%;
-    height: 400px;
-    width: 500px;
+    top: 0;
+    left: 50%;
+    transform: translate(-35%, -25%);
+    height: 20rem;
+    width: 25rem;
     background: radial-gradient(ellipse at center, rgba(154, 0, 0, 0.4) 0%, rgba(154, 0, 0, 0) 80%);
 }
 
 .gradientLeft {
-    top: 0;
-    bottom: 0;
-    left: -10%;
-    width: 300px;
-    height: 500px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0;
+    width: 15rem;
+    height: 25rem;
     background: radial-gradient(ellipse at center, rgba(154, 0, 0, 0.3) 0%, rgba(154, 0, 0, 0) 80%);
 }
 
 .gradientBottom {
-    left: 25%;
-    bottom: -10%;
-    height: 400px;
-    width: 500px;
+    left: 50%;
+    transform: translate(-35%, 25%);
+    bottom: 0;
+    height: 20rem;
+    width: 25rem;
     background: radial-gradient(
                     ellipse at center,
                     rgba(154, 0, 0, 0.4) 0%,

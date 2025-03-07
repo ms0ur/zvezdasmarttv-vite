@@ -7,7 +7,7 @@ export function FirstSection() {
     return (
         <div className={styles.sectionMain}>
             <div className={styles.navbar}>
-                <img src={logo} alt=""/>
+                <img className={styles.navbarLogo} src={logo} alt=""/>
             </div>
             <div className={styles.contentContainer}>
                 <div className={styles.info}>
