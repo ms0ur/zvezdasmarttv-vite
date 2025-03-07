@@ -1,2 +1,12 @@
-@import "fonts.scss";
-@import "normalize.scss";
+@use "fonts.scss";
+@use "normalize.scss";
+
+
+html {
+  overflow-x: hidden;
+  font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1440 - 320)));
+  @media screen and (max-width: 992px) {
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (768 - 320)));
+  }
+}
+

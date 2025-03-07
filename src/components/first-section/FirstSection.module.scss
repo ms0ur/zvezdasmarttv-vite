@@ -1,0 +1,137 @@
+@use "../../assets/styles/fonts.scss";
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+    overflow: visible;
+}
+.sectionMain{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #33353F;
+    padding: 2rem;
+    padding-right: 0;
+    gap: 4rem;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    &Logo{
+        width: 6.2rem;
+    }
+}
+
+.header{
+    @extend .roboto-900;
+    font-size: 2.4rem;
+    color: white;
+    line-height: 2.3rem;
+
+    &Second{
+        @extend .roboto-900;
+        font-size: 1.8rem;
+        color: white;
+        line-height: 2.1rem;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    &Secondary{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
+.description{
+    @extend .roboto-500;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.buttonContainer{
+    width: 20rem;
+}
+
+.tvImage {
+    position: relative;
+    width: 36rem;
+    height: 28rem;
+
+    &Img {
+        position: relative;
+        z-index: 2;
+        width: 43rem;
+        height: 33rem;
+    }
+}
+
+.gradientTop,
+.gradientLeft,
+.gradientBottom {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.gradientTop {
+    top: 0;
+    left: 50%;
+    transform: translate(-35%, -25%);
+    height: 20rem;
+    width: 25rem;
+    background: radial-gradient(ellipse at center, rgba(154, 0, 0, 0.4) 0%, rgba(154, 0, 0, 0) 80%);
+}
+
+.gradientLeft {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0;
+    width: 15rem;
+    height: 25rem;
+    background: radial-gradient(ellipse at center, rgba(154, 0, 0, 0.3) 0%, rgba(154, 0, 0, 0) 80%);
+}
+
+.gradientBottom {
+    left: 50%;
+    transform: translate(-35%, 25%);
+    bottom: 0;
+    height: 20rem;
+    width: 25rem;
+    background: radial-gradient(
+                    ellipse at center,
+                    rgba(154, 0, 0, 0.4) 0%,
+                    rgba(154, 0, 0, 0) 80%
+    );
+}
+.mouseContainer{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        animation: moveUpDown 2s ease-in-out infinite;
+    }
+
+    @keyframes moveUpDown {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+}

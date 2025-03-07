@@ -1,10 +1,11 @@
-import './assets/styles/styles.scss'
+
+import {FirstSection} from "./components/first-section/FirstSection.tsx";
 
 function App() {
 
   return (
     <>
-      <p>test</p>
+      <FirstSection />
     </>
   )
 }
