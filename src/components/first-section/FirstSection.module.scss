@@ -11,12 +11,14 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: min-content;
     background-color: #33353F;
     padding: 2rem;
     padding-right: 0;
+    padding-bottom: 0.2rem;
     gap: 4rem;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .navbar{
