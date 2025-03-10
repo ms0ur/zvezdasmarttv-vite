@@ -1,0 +1,70 @@
+@use "../../assets/styles/fonts.scss";
+.sectionMain{
+  padding: 2rem 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #33353F;
+  height: auto;
+  width: 100vw;
+}
+.lineContainer{
+  height: 5px;
+  width: 11.5rem;
+  background: #FFF;
+  border-radius: 8px;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  &Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    &Title {
+      @extend .roboto-900;
+      font-size: 1.8rem;
+      line-height: normal;
+      color: #FFF;
+      text-align: center;
+    }
+
+    &Desc {
+      @extend .roboto-500;
+      font-size: 1rem;
+      line-height: normal;
+      color: #FFF;
+      text-align: center;
+    }
+  }
+  &Grid{
+    width: 100vw;
+    height: auto;
+  }
+}
+.action{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.8rem;
+  width: 100%;
+
+  &Button{
+    width: 16rem;
+  }
+
+}
+.footer{
+  @extend .roboto-400;
+  font-size: 0.7rem;
+  line-height: normal;
+  color: #9B9B9B;
+  text-align: center;
+}

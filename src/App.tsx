@@ -1,5 +1,5 @@
 
-import {FirstSection, SecondSection} from "./components";
+import {FirstSection, SecondSection, ThirdSection} from "./components";
 
 function App() {
 
@@ -7,6 +7,7 @@ function App() {
     <>
         <FirstSection />
         <SecondSection />
+        <ThirdSection />
     </>
   )
 }
