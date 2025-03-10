@@ -1,6 +1,6 @@
 import styles from './InstallGuideDesktop.module.scss';
 
-// selected - получаем переменную из usestate через пропсы
+
 interface InstallGuideDesktopProps {
     selected: number
 }
