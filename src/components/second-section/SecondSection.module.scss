@@ -15,6 +15,10 @@
       gap: 1rem;
       padding: 1.5rem;
     }
+    @media screen and (max-width: variables.$mobile) {
+      gap: 0.71rem;
+      padding: 1.64rem 0.85rem;
+    }
     &Info{
       display: flex;
       flex-direction: column;
@@ -25,6 +29,9 @@
       @media screen and (max-width: variables.$tablet) {
         gap: 1.35rem;
       }
+      @media screen and (max-width: variables.$mobile) {
+        gap: 1.42rem;
+      }
       &Guide{
         display: flex;
         flex-direction: column;
@@ -34,6 +41,9 @@
         width: 100%;
         @media screen and (max-width: variables.$tablet) {
           gap: 2rem;
+        }
+        @media screen and (max-width: variables.$mobile) {
+          gap: 0;
         }
       }
     }
@@ -47,6 +57,9 @@
     @media screen and (max-width: variables.$tablet) {
       font-size: 1.2rem;
     }
+    @media screen and (max-width: variables.$mobile) {
+      font-size: 1.71rem;
+    }
   }
 }
 .lineContainer{
@@ -57,6 +70,9 @@
   @media screen and (max-width: variables.$tablet) {
     width: 15rem;
   }
+  @media screen and (max-width: variables.$mobile) {
+    width: 14.28rem;
+  }
 }
 
 .desc{
@@ -66,6 +82,9 @@
   gap: 0.75rem;
   @media screen and (max-width: variables.$tablet) {
       gap: 1rem;
+  }
+  @media screen and (max-width: variables.$mobile) {
+    gap: 1.28rem;
   }
   &Logo{
     width: 6rem;
@@ -79,6 +98,10 @@
       width: 3.5rem;
       height: 3.5rem;
     }
+    @media screen and (max-width: variables.$mobile) {
+      width: 5rem;
+      height: 5rem;
+    }
   }
   &Text{
     @extend .roboto-500;
@@ -89,6 +112,9 @@
     @media screen and (max-width: variables.$tablet) {
       font-size: 0.8rem;
       max-width: inherit;
+    }
+    @media screen and (max-width: variables.$mobile) {
+      font-size: 1rem;
     }
 
     &Link{
@@ -107,6 +133,9 @@
   gap: 2.5rem;
   @media screen and (max-width: variables.$tablet) {
     gap: 1rem;
+  }
+  @media screen and (max-width: variables.$mobile) {
+    display: none;
   }
   &Item{
     display: flex;

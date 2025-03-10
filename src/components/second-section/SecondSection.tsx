@@ -7,11 +7,18 @@ import off from "../../assets/svg/off.svg";
 import mouseBlack from "../../assets/svg/mouse_black.svg";
 
 import styles from './SecondSection.module.scss';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 
 export function SecondSection() {
-    const [selected, setSelected] = useState(0);
+    const [selected, setSelected] = useState(window.innerWidth < 576 ? 1 : 0);;
+
+    useEffect(() => {
+        const handleResize = () => window.innerWidth < 576 ? setSelected(1) : setSelected(0);
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
     return (
         <>
             <div className={styles.sectionMain}>
