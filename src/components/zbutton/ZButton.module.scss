@@ -14,4 +14,7 @@ button{
   @media screen and (max-width: variables.$tablet) {
     font-size: 0.9rem;
   }
+  @media screen and (max-width: variables.$mobile) {
+    font-size: 1.28rem;
+  }
 }

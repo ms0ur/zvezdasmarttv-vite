@@ -14,6 +14,11 @@
         padding: 0.5rem 1.25rem;
         align-items: center;
     }
+    @media screen and (max-width: variables.$mobile) {
+        gap: 1.42rem;
+        padding: 0.71rem;
+        align-items: center;
+    }
     
 }
 
@@ -37,6 +42,11 @@
         gap: 1.2rem;
         flex-direction: column;
     }
+    @media screen and (max-width: variables.$mobile) {
+        gap: 1.42rem;
+        flex-direction: column;
+        max-width: 100%;
+    }
 
 }
 
@@ -58,6 +68,10 @@
             font-size: 1.2rem;
             text-align: center;
         }
+        @media screen and (max-width: variables.$mobile) {
+            font-size: 1.71rem;
+            max-width: 100%;
+        }
     }
 }
 
@@ -73,6 +87,9 @@
             gap: 1rem;
             align-items: center;
         }
+        @media screen and (max-width: variables.$mobile) {
+            gap: 0.71rem;
+        }
     }
 }
 
@@ -84,12 +101,19 @@
     @media screen and (max-width: variables.$tablet) {
         font-size: 0.7rem;
     }
+    @media screen and (max-width: variables.$mobile) {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 .buttonContainer{
     width: 20rem;
     @media screen and (max-width: variables.$tablet) {
         width: 12.5rem;
+    }
+    @media screen and (max-width: variables.$mobile) {
+        width: 15.9rem;
     }
 }
 
@@ -100,6 +124,10 @@
     @media screen and (max-width: variables.$tablet) {
         width: 25rem;
         height: 17.5rem;
+    }
+    @media screen and (max-width: variables.$mobile) {
+        width: 21.4rem;
+        height: 14.9rem;
     }
 
     &Img {
