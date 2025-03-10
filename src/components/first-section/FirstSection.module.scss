@@ -5,13 +5,12 @@
     width: 100vw;
     height: auto;
     background-color: #33353F;
-    padding: 2rem;
-    padding-right: 0;
+    padding: 2rem 0 2rem 2rem;
     gap: 4rem;
     overflow: hidden;
     @media screen and (max-width: 992px) {
         gap: 1.2rem;
-        padding: 0.5rem;
+        padding: 0.5rem 1.25rem;
         align-items: center;
     }
 }
