@@ -3,5 +3,4 @@ export * from './second-section/SecondSection.tsx'
 
 export * from './zbutton/ZButton.tsx'
 
-export * from './install-guide-desktop/InstallGuideDesktop.tsx'
-export * from './install-guide-tablet/InstallGuideTablet.tsx'
+export * from './install-guide/InstallGuide.tsx'

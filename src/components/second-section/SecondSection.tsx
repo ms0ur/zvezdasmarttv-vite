@@ -1,6 +1,6 @@
 
 import {ZButton} from "../";
-import {InstallGuideDesktop} from "../";
+import {InstallGuide} from "../";
 
 import logo from "../../assets/svg/star-logo.svg";
 import on from "../../assets/svg/on.svg";
@@ -55,7 +55,7 @@ export function SecondSection() {
                                 </div>
                             </div>
                         </div>
-                        <InstallGuideDesktop selected={selected} />
+                        <InstallGuide selected={selected} />
                         <div className={styles.buttonContainer}>
                             <ZButton text={"Скачать приложение"} />
                         </div>

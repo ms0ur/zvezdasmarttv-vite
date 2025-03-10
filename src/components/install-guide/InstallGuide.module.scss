@@ -2,8 +2,8 @@
 .installGuide{
   display: flex;
   flex-direction: row;
-  gap: 2.5rem;
-  max-width: 100vw;
+  gap: 1.8rem;
+  max-width: 99vw;
   &Item{
     display: flex;
     position: relative;
@@ -20,6 +20,14 @@
         font-size: 0.7rem;
         color: #33353F;
         text-align: center;
+        &Link{
+          @extend .roboto-400;
+          font-size: 0.7rem;
+          color: rgba(255,0,0,1);
+          text-align: center;
+          text-decoration: underline;
+          text-decoration-style: solid;
+        }
       }
       &2{
         @extend .roboto-400;

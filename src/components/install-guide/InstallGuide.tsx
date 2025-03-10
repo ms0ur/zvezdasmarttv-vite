@@ -1,12 +1,12 @@
-import styles from './InstallGuideTablet.module.scss';
+import styles from './InstallGuide.module.scss';
 
-// selected - получаем переменную из usestate через пропсы
-interface InstallGuideTabletProps {
+
+interface InstallGuideDesktopProps {
     selected: number
 }
 
 
-export function InstallGuideTablet({selected}: InstallGuideTabletProps) {
+export function InstallGuide({selected}: InstallGuideDesktopProps) {
     return(
         <div className={styles.installGuide}>
             <div className={styles.installGuideItem}>
@@ -32,11 +32,15 @@ export function InstallGuideTablet({selected}: InstallGuideTabletProps) {
                     <img width='100%' src={selected === 0 ? "/install/tv/browser/installTVBrowser2.png" : "/install/tv/usb/installTVUSB2.png"} alt=""/>
                 </div>
                 <p className={styles.installGuideItemText1}>
-                    {
-                        selected === 0 ?
-                            "Откройте в браузере вашего телевизора эту страницу (tvzvezda.ru/sp/smart) и нажмите кнопку «Скачать приложение»" :
-                            "Установите на вашем устройстве любой файловый менеджер"
-                    }
+                    {selected === 0 ? (
+                        <>
+                            Откройте в браузере вашего телевизора эту страницу (
+                            <a href="https://tvzvezda.ru/sp/smart" className={styles.installGuideItemText1Link}>tvzvezda.ru/sp/smart</a>
+                            ) и нажмите кнопку «Скачать приложение»
+                        </>
+                    ) : (
+                        "Установите на вашем устройстве любой файловый менеджер"
+                    )}
                 </p>
                 <p className={styles.installGuideItemText2}>
 
