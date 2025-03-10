@@ -11,12 +11,14 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: min-content;
     background-color: #33353F;
     padding: 2rem;
     padding-right: 0;
+    padding-bottom: 0.2rem;
     gap: 4rem;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .navbar{
@@ -32,13 +34,13 @@
     @extend .roboto-900;
     font-size: 2.4rem;
     color: white;
-    line-height: 2.3rem;
+    line-height: normal;
 
     &Second{
         @extend .roboto-900;
         font-size: 1.8rem;
         color: white;
-        line-height: 2.1rem;
+        line-height: normal;
     }
 }
 
@@ -57,6 +59,7 @@
     @extend .roboto-500;
     font-size: 1.2rem;
     color: white;
+    line-height: normal;
 }
 
 .buttonContainer{
@@ -120,6 +123,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    transform: translateX(-2rem);
 
     img{
         animation: moveUpDown 2s ease-in-out infinite;

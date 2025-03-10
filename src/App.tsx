@@ -1,11 +1,12 @@
 
-import {FirstSection} from "./components/first-section/FirstSection.tsx";
+import {FirstSection, SecondSection} from "./components";
 
 function App() {
 
   return (
     <>
-      <FirstSection />
+        <FirstSection />
+        <SecondSection />
     </>
   )
 }
