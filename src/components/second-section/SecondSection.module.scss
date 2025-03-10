@@ -1,4 +1,5 @@
 @use "../../assets/styles/fonts.scss";
+@use "../../assets/styles/variables.scss";
 .section{
   &Main{
     display: flex;
@@ -10,7 +11,7 @@
     padding: 1.75rem;
     gap: 1.35rem;
     overflow: hidden;
-    @media screen  and (max-width: 992px) {
+    @media screen  and (max-width: variables.$tablet) {
       gap: 1rem;
       padding: 1.5rem;
     }
@@ -21,7 +22,7 @@
       gap: 1.65rem;
       justify-content: center;
       width: 100%;
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: variables.$tablet) {
         gap: 1.35rem;
       }
       &Guide{
@@ -31,7 +32,7 @@
         gap: 2.5rem;
         justify-content: center;
         width: 100%;
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: variables.$tablet) {
           gap: 2rem;
         }
       }
@@ -43,7 +44,7 @@
     color: #33353F;
     line-height: normal;
     text-align: center;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
       font-size: 1.2rem;
     }
   }
@@ -53,7 +54,7 @@
   width: 11.5rem;
   background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(154,0,0,1) 100%);
   border-radius: 8px;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: variables.$tablet) {
     width: 15rem;
   }
 }
@@ -63,7 +64,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: variables.$tablet) {
       gap: 1rem;
   }
   &Logo{
@@ -74,7 +75,7 @@
     align-items: center;
     border-radius: 8px;
     box-shadow: 0px 1px 10px 0px #00000080;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
       width: 3.5rem;
       height: 3.5rem;
     }
@@ -85,7 +86,7 @@
     font-size: 1rem;
     line-height: normal;
     text-align: center;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
       font-size: 0.8rem;
       max-width: inherit;
     }
@@ -104,7 +105,7 @@
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: variables.$tablet) {
     gap: 1rem;
   }
   &Item{
@@ -128,14 +129,14 @@
 
 .buttonContainer{
   width: 16rem;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: variables.$tablet) {
     display: none;
   }
 }
 .mouse{
   img{
     animation: moveUpDown 2s ease-in-out infinite;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
       display: none;
     }
   }

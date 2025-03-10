@@ -1,4 +1,5 @@
 @use "../../assets/styles/fonts.scss";
+@use "../../assets/styles/variables.scss";
 .sectionMain{
   padding: 2rem 0;
   display: flex;
@@ -9,7 +10,7 @@
   background: #33353F;
   height: auto;
   width: 100vw;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: variables.$tablet) {
     padding: 1.5rem;
     gap: 1.5rem;
   }
@@ -20,7 +21,7 @@
   width: 11.5rem;
   background: #FFF;
   border-radius: 8px;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: variables.$tablet) {
       width: 15rem;
   }
 }
@@ -30,7 +31,7 @@
   align-items: center;
   gap: 2.5rem;
   width: 100%;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: variables.$tablet) {
     gap: 2rem;
   }
   &Text {
@@ -38,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
       gap: 0.75rem;
     }
 
@@ -48,7 +49,7 @@
       line-height: normal;
       color: #FFF;
       text-align: center;
-      @media screen  and (max-width: 992px) {
+      @media screen  and (max-width: variables.$tablet) {
         font-size: 1.2rem;
       }
     }
@@ -59,7 +60,7 @@
       line-height: normal;
       color: #FFF;
       text-align: center;
-      @media screen  and (max-width: 992px) {
+      @media screen  and (max-width: variables.$tablet) {
         font-size: 0.7rem;
       }
     }
@@ -67,7 +68,7 @@
   &Grid{
     width: 100vw;
     height: auto;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
       width: 30rem;
     }
   }
@@ -81,7 +82,7 @@
 
   &Button{
     width: 16rem;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
       width: 9rem;
     }
   }
@@ -93,7 +94,7 @@
   line-height: normal;
   color: #9B9B9B;
   text-align: center;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: variables.$tablet) {
     font-size: 0.5rem;
   }
 }

@@ -1,4 +1,5 @@
 @use "../../assets/styles/fonts.scss";
+@use "../../assets/styles/variables.scss";
 .sectionMain{
     display: flex;
     flex-direction: column;
@@ -8,11 +9,12 @@
     padding: 2rem 0 2rem 2rem;
     gap: 4rem;
     overflow: hidden;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
         gap: 1.2rem;
         padding: 0.5rem 1.25rem;
         align-items: center;
     }
+    
 }
 
 .navbar{
@@ -31,7 +33,7 @@
     align-items: center;
     gap: 1.5rem;
     overflow: visible;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
         gap: 1.2rem;
         flex-direction: column;
     }
@@ -43,7 +45,7 @@
     font-size: 2.4rem;
     color: white;
     line-height: normal;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
         display: none;
     }
 
@@ -52,7 +54,7 @@
         font-size: 1.8rem;
         color: white;
         line-height: normal;
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: variables.$tablet) {
             font-size: 1.2rem;
             text-align: center;
         }
@@ -67,7 +69,7 @@
         display: flex;
         flex-direction: column;
         gap: 0.8rem;
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: variables.$tablet) {
             gap: 1rem;
             align-items: center;
         }
@@ -79,14 +81,14 @@
     font-size: 1.2rem;
     color: white;
     line-height: normal;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
         font-size: 0.7rem;
     }
 }
 
 .buttonContainer{
     width: 20rem;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
         width: 12.5rem;
     }
 }
@@ -95,7 +97,7 @@
     position: relative;
     width: 36rem;
     height: 28rem;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
         width: 25rem;
         height: 17.5rem;
     }
@@ -105,7 +107,7 @@
         z-index: 2;
         width: 43rem;
         height: 33rem;
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: variables.$tablet) {
             width: 100%;
             height: auto;
             z-index: inherit;
@@ -119,7 +121,7 @@
     position: absolute;
     z-index: 1;
     pointer-events: none;
-    @media screen  and (max-width: 992px) {
+    @media screen  and (max-width: variables.$tablet) {
         display: none;
     }
 }
@@ -161,7 +163,7 @@
     justify-content: center;
     align-items: center;
     transform: translateX(-2rem);
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: variables.$tablet) {
         display: none;
     }
 
