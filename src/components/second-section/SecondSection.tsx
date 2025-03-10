@@ -1,4 +1,3 @@
-
 import {ZButton} from "../";
 import {InstallGuide} from "../";
 
@@ -11,9 +10,6 @@ import styles from './SecondSection.module.scss';
 import {useState} from "react";
 
 
-
-
-
 export function SecondSection() {
     const [selected, setSelected] = useState(0);
     return (
@@ -24,7 +20,7 @@ export function SecondSection() {
                 <div className={styles.sectionMainInfo}>
                     <div className={styles.desc}>
                         <div className={styles.descLogo}>
-                            <img src={logo} alt=""/>
+                            <img width='90%' src={logo} alt=""/>
                         </div>
                         <p className={styles.descText}>Приложение «Звезда» доступно бесплатно в
                             магазине приложений вашего телевизора,
