@@ -1,4 +1,5 @@
 @use "../../assets/styles/fonts.scss";
+@use "../../assets/styles/variables.scss";
 .sectionMain{
   padding: 2rem 0;
   display: flex;
@@ -9,12 +10,27 @@
   background: #33353F;
   height: auto;
   width: 100vw;
+  @media screen and (max-width: variables.$tablet) {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    gap: 1.5rem;
+  }
+  @media screen and (max-width: variables.$mobile) {
+    padding: 2.71rem 1.42rem;
+    gap: 2.85rem;
+  }
+
 }
 .lineContainer{
   height: 5px;
   width: 11.5rem;
   background: #FFF;
   border-radius: 8px;
+  @media screen and (max-width: variables.$tablet) {
+    width: 15rem;
+  }
+  @media screen and (max-width: variables.$mobile) {
+    width: 14.28rem;
+  }
 }
 .info{
   display: flex;
@@ -22,11 +38,23 @@
   align-items: center;
   gap: 2.5rem;
   width: 100%;
+  @media screen and (max-width: variables.$tablet) {
+    gap: 2rem;
+  }
+  @media screen and (max-width: variables.$mobile) {
+    gap: 1.42rem;
+  }
   &Text {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    @media screen and (max-width: variables.$tablet) {
+      gap: 0.75rem;
+    }
+    @media screen and (max-width: variables.$mobile) {
+      gap: 1.07rem;
+    }
 
     &Title {
       @extend .roboto-900;
@@ -34,6 +62,12 @@
       line-height: normal;
       color: #FFF;
       text-align: center;
+      @media screen  and (max-width: variables.$tablet) {
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: variables.$mobile) {
+        font-size: 1.71rem;
+      }
     }
 
     &Desc {
@@ -42,11 +76,23 @@
       line-height: normal;
       color: #FFF;
       text-align: center;
+      @media screen  and (max-width: variables.$tablet) {
+        font-size: 0.7rem;
+      }
+      @media screen and (max-width: variables.$mobile) {
+        font-size: 1rem;
+      }
     }
   }
   &Grid{
     width: 100vw;
     height: auto;
+    @media screen and (max-width: variables.$tablet) {
+      width: 30rem;
+    }
+    @media screen and (max-width: variables.$mobile) {
+      width: 100%;
+    }
   }
 }
 .action{
@@ -55,9 +101,18 @@
   align-items: center;
   gap: 2.8rem;
   width: 100%;
+  @media screen and (max-width: variables.$mobile) {
+    gap: 3.21rem;
+  }
 
   &Button{
     width: 16rem;
+    @media screen and (max-width: variables.$tablet) {
+      width: 9rem;
+    }
+    @media screen and (max-width: variables.$mobile) {
+      width: 18.57rem;
+    }
   }
 
 }
@@ -67,4 +122,10 @@
   line-height: normal;
   color: #9B9B9B;
   text-align: center;
+  @media screen and (max-width: variables.$tablet) {
+    font-size: 0.5rem;
+  }
+  @media screen and (max-width: variables.$mobile) {
+    font-size: 0.71rem;
+  }
 }

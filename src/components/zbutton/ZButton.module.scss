@@ -1,4 +1,5 @@
 @use "../../assets/styles/fonts.scss";
+@use "../../assets/styles/variables.scss";
 button{
   @extend .roboto-500;
   width: 100%;
@@ -10,4 +11,10 @@ button{
   padding: 0.5rem;
   border-radius: 8px;
   color: white;
+  @media screen and (max-width: variables.$tablet) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: variables.$mobile) {
+    font-size: 1.28rem;
+  }
 }

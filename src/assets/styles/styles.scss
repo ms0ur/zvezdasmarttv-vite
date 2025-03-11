@@ -1,12 +1,14 @@
 @use "fonts.scss";
 @use "normalize.scss";
+@use "variables.scss";
 
 
 html {
   overflow-x: hidden;
   font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1440 - 320)));
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: variables.$tablet) {
     font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (768 - 320)));
   }
+
 }
 
