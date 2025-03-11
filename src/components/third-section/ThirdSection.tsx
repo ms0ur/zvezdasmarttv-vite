@@ -32,7 +32,7 @@ export function ThirdSection() {
            </div>
            <div className={styles.action}>
                <div className={styles.actionButton}>
-                   <ZButton text={isTablet ? "Установить" : "Мобильное приложение"}/>
+                   <ZButton text={"Мобильное приложение"}/>
                </div>
                <footer className={styles.footer}>
                    © 2020 ОАО «ТРК ВС РФ «ЗВЕЗДА»
