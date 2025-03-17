@@ -5,6 +5,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
   font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1440 - 320)));
   @media screen and (max-width: variables.$tablet) {
     font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (768 - 320)));

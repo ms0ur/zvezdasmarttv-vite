@@ -32,7 +32,7 @@ export function FirstSection() {
 
             </div>
             <div className={styles.mouseContainer}>
-                <img src={mouse} alt=""/>
+                <a href="/#secondSection"><img src={mouse} alt="" /></a>
             </div>
         </div>
     );

@@ -15,7 +15,7 @@ export function SecondSection() {
 
     return (
         <>
-            <div className={styles.sectionMain}>
+            <div className={styles.sectionMain} id="secondSection">
                 <div className={styles.lineContainer}></div>
                 <h2 className={styles.sectionHeader}>Установка приложения</h2>
                 <div className={styles.sectionMainInfo}>
@@ -58,7 +58,7 @@ export function SecondSection() {
                         </div>
                     </div>
                     <div className={styles.mouse}>
-                        <img src={mouseBlack} alt=""/>
+                        <a href="/#thirdSection"><img src={mouseBlack} alt=""/></a>
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@ export function ThirdSection() {
     
     
     return(
-       <div className={styles.sectionMain}>
+       <div className={styles.sectionMain} id="thirdSection">
            <div className={styles.lineContainer}></div>
            <div className={styles.info}>
                <div className={styles.infoText}>
